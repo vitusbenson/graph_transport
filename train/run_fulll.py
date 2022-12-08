@@ -8,9 +8,9 @@ import torchvision.transforms as transforms
 import xarray as xr
 from torch.utils.data import DataLoader, Dataset
 
-from graph_weather import GraphWeatherForecaster
-from graph_weather.data import const
-from graph_weather.models.losses import NormalizedMSELoss
+from graph_transport import GraphWeatherForecaster
+from graph_transport.data import const
+from graph_transport.models.losses import NormalizedMSELoss
 
 
 class XrDataset(Dataset):

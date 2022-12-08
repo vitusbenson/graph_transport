@@ -5,11 +5,12 @@ channels:
   - defaults
   - conda-forge
 dependencies:
-  - cudatoolkit=11.3
+  - cudatoolkit=10.2
   - numpy
   - pyg
   - python
-  - pytorch=1.11.0=py3.9_cuda11.3_cudnn8.2.0_0
+  - pip
+  - pytorch=1.11.0=py3.9_cuda10.2_cudnn7.6.5_0
   - pytorch-cluster
   - pytorch-scatter
   - pytorch-sparse
@@ -18,6 +19,13 @@ dependencies:
   - scipy
   - torchvision
   - tqdm
+  - ipykernel
+  - xarray
+  - zarr
+  - dask
+  - matplotlib
+  - seaborn
+  - netCDF4
   - pip:
       - datasets
       - einops

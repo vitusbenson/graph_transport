@@ -9,9 +9,9 @@ from pysolar.util import extraterrestrial_irrad
 from pytorch_lightning.callbacks import ModelCheckpoint
 from torch.utils.data import DataLoader, Dataset, IterableDataset
 
-from graph_weather import GraphWeatherForecaster
-from graph_weather.data import const
-from graph_weather.models.losses import NormalizedMSELoss
+from graph_transport import GraphWeatherForecaster
+from graph_transport.data import const
+from graph_transport.models.losses import NormalizedMSELoss
 
 const.FORECAST_MEANS = {var: np.asarray(value) for var, value in const.FORECAST_MEANS.items()}
 const.FORECAST_STD = {var: np.asarray(value) for var, value in const.FORECAST_STD.items()}
